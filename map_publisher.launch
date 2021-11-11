@@ -1,0 +1,12 @@
+<launch>
+  <node pkg="map_publisher" type="map_publisher" name="MapPublisher" />
+  <node pkg="tf2_lidar" type="tf2_lidar" name="static_tf_publisher" />
+
+  <param name="/map_filename" type="str" value="/home/takahashi/catkin_ws/p_cloud_ascii.pcd" />
+  <param name="/LeafSize" type="double" value="0.1" />
+
+  <param name="/start_x" type="double" value="0.0" />
+  <param name="/start_y" type="double" value="2.0" />
+  <param name="/start_th" type="double" value="-5.0" />
+
+</launch>
